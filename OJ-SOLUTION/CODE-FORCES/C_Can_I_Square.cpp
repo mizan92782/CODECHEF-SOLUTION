@@ -88,8 +88,8 @@ int cs=0;
 void Import()
 {
     fast;
-    freopen("input.txt", "r", stdin); 
-    freopen("output.txt", "w", stdout); 
+   // freopen("input.txt", "r", stdin); 
+   // freopen("output.txt", "w", stdout); 
 }
 
 
@@ -100,10 +100,46 @@ void Import()
   * ****************************  Main Function ******************************************
 */
 
+
+bool isPerfectSquare(long long number) {
+    // Find the square root of the number
+    double squareRoot = sqrt(number);
+
+    // Check if the square root is an integer
+    return squareRoot == floor(squareRoot);
+}
+
+
 int main()
 {
 
      Import();
+
+     int t;
+     cin>>t;
+     while (t--)
+     {
+         int n;
+         cin>>n;
+         long long arr[n];
+        long long sum=0;
+
+
+         for(int i=0;i<n;i++)
+         {
+             cin>>arr[i];
+             sum=sum+arr[i];
+         }
+
+
+
+         
+
+        (isPerfectSquare(sum))?  cout<<"YES\n" : cout<<"NO\n";
+
+         
+     }
+     
     
 
      

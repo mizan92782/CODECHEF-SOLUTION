@@ -104,6 +104,45 @@ int main()
 {
 
      Import();
+
+     int t;
+     cin>>t;while (t--)
+     {
+         int n;
+         cin>>n;
+         n=n+1;
+         int arr[n];
+
+         int even[10000];
+         int odd[10000];
+
+         int sum=0;
+
+          //alice
+         for(int i=1;i<n;i=i+2)
+         {
+            sum=sum+arr[i];
+
+            odd[i]=sum;
+         }
+
+
+
+         //dad
+         sum=0;
+        for(int i=1;i<n;i=i+2)
+         {
+            sum=sum+arr[i];
+
+            even[i]=sum;
+         }
+
+
+
+
+         
+     }
+     
     
 
      

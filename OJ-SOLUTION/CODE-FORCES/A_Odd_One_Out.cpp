@@ -88,8 +88,8 @@ int cs=0;
 void Import()
 {
     fast;
-    freopen("input.txt", "r", stdin); 
-    freopen("output.txt", "w", stdout); 
+   // freopen("input.txt", "r", stdin); 
+    //freopen("output.txt", "w", stdout); 
 }
 
 
@@ -104,6 +104,46 @@ int main()
 {
 
      Import();
+
+     int t;
+     cin>>t;
+     while (t--)
+     {
+        int n=3;
+        vector<vector<int>>vec(n,vector<int>(n));
+
+        set<char>myset;
+
+        
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                cin>>vec[i][j];
+            }
+        }
+
+        sort(vec[0].begin(), vec[0].end());
+        sort(vec[1].begin(), vec[1].end());
+        sort(vec[2].begin(), vec[2].end());
+
+
+         for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                if(vec[i][j]=='?')
+                {
+                    cout<<vec[i][j]<<endl;
+                    break;
+                }
+            }
+        }
+
+
+
+     }
+     
     
 
      

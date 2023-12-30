@@ -88,8 +88,8 @@ int cs=0;
 void Import()
 {
     fast;
-    freopen("input.txt", "r", stdin); 
-    freopen("output.txt", "w", stdout); 
+    //freopen("input.txt", "r", stdin); 
+    //freopen("output.txt", "w", stdout); 
 }
 
 
@@ -104,6 +104,48 @@ int main()
 {
 
      Import();
+
+     int t;
+     cin>>t;
+     while (t--)
+     {
+
+         ios_base::sync_with_stdio(false);
+        cin.tie(nullptr);
+           cout.tie(nullptr);
+           int n;
+           cin>>n;
+           string str;
+           cin>>str;
+
+           
+
+            string x="";
+
+        
+         
+
+           for(int i=0;i<n-1;i=i+2)
+           {
+                 
+                 if((str[i]=='b' || str[i]=='c' || str[i]=='d')  &&  (str[i+1]=='b' || str[i+1]=='c' || str[i+1]=='d'))
+                 {
+                     x=x+'.'+str[i]+str[i+1];
+                    
+                 }else{
+                     x=x+str[i]+str[i+1];
+                 }
+         
+           }
+
+         
+           if(x.back()=='.') x.pop_back();
+           
+           cout<<x<<endl;
+
+
+     }
+     
     
 
      
