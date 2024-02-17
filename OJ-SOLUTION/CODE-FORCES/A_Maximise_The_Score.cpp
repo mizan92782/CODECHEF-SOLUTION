@@ -88,8 +88,8 @@ int cs=0;
 void Import()
 {
     fast;
-    freopen("input.txt", "r", stdin); 
-    freopen("output.txt", "w", stdout); 
+    //freopen("input.txt", "r", stdin); 
+    //freopen("output.txt", "w", stdout); 
 }
 
 
@@ -99,12 +99,39 @@ void Import()
 /*
   * ****************************  Main Function ******************************************
 */
-
-int main()
+void dfs(vector<vector<int>>& graph,int i,int& count)
 {
+       for(int v: graph[i])
+       {
+        count++;
+        dfs(graph,v,count);
+       }
+}
 
-     Import();
+int main() {
+    
+    int t;
+    cin>>t;
+    while (t--)
+    {
+         int n;cin>>n;
+         int m=n*2;
+         int arr[m];
+         for(int i=0;i<m;i++) cin>>arr[i];
+
+         sort(arr,arr+m);
+
+         int sum=0;
+         for(int i=0;i<m;i=i+2)
+         {
+            sum=sum+arr[i];
+         }
+
+         cout<<sum<<endl;
+
+    }
     
 
-     
+
+    return 0;
 }

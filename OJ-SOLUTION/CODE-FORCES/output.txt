@@ -1,1 +1,6 @@
-Insomecontestsystems,filesareusedforinputandoutput.Aneasysolutionforthisistowritethecodeasusualusingstandardstreams,butaddthefollowinglinestothebeginningofthecode:
+NO
+NO
+NO
+NO
+NO
+NO

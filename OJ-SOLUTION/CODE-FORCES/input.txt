@@ -1,3 +1,16 @@
-In some contest systems, files are used for input and output. An easy solution
-for this is to write the code as usual using standard streams, but add the following
-lines to the beginning of the code:
+6
+8
+bacedbab
+4
+baba
+13
+daddecabeddad
+3
+dac
+6
+dacdac
+22
+dababbabababbabbababba
+
+
+https://github.com/mizan92782/PROBLEM-SOLVEING-COUNT/blob/main/README.md
